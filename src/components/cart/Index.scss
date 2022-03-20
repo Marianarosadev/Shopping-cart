@@ -1,0 +1,112 @@
+#cart {
+    padding: 1rem;
+    max-width: 28rem;
+    min-width: 18rem;
+
+    .card {
+        background: #FFFFFF;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+        .title {
+            padding: 1rem;
+            font-weight: 700;
+            font-size: 20px;
+            text-align: center;
+            border-bottom: 1px solid #C0C0C0;
+        }
+
+        #products {
+            padding: 1rem 1rem 0 1rem;
+            border-bottom: 1px solid #C0C0C0;
+        
+            .product {
+                padding-bottom: 1rem;
+                display: flex;
+        
+                .photo {
+                    border: 1px solid #C0C0C0;
+                    width: 7rem;
+                    min-width: 7rem;
+                    height: 7rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+        
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+        
+                .infos {
+                    padding-left: 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+        
+                    .name {
+                        font-size: 14px;
+                        font-weight: 600;
+                    }
+        
+                    .initial-price {
+                        padding-top: .5rem;
+                        font-size: 12px;
+                        color: #C0C0C0;
+                    }
+        
+        
+                    .price {
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
+                }
+            }
+        
+        }
+
+        .total {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 1rem 0.5rem 1rem;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .shipping {
+            padding: 1rem;
+            border-bottom: 1px solid #C0C0C0;
+            text-align: center;
+
+            span {
+                background: #c7ffa6;
+                color: #5b9512;
+                padding: .5rem 1rem;
+                font-size: 14px;
+                font-weight: 600;
+                border-radius: 30px;
+
+                @media screen and (max-width: 478px) {
+                    font-size: 11px;
+                }
+            }
+        }
+
+        .finish {
+            padding: 1rem;
+
+            .button-primary {
+                font-family: 'Poppins', sans-serif;
+                border: 0;
+                width: 100%;
+                font-size: 18px;
+                color: #FFFFFF;
+                font-weight: 600;
+                background: #3b74f2;
+                padding: .8rem;
+                border-radius: 6px;
+            }
+        }
+    }
+}
